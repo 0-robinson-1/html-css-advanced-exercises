@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="nl">
 <head>
 <meta charset="utf-8">
 <link href="css/gazet.css" rel="stylesheet">
@@ -83,15 +83,24 @@ window.onload = function (){
           </caption>
           <tbody>
             <tr>
-              <th scope="col">Plaats</th>
-              <th scope="col">Weer</th>
+              <th rowspan="2">Regio</th>
+              <th rowspan="2">Plaats</th>
+              <th rowspan="2">Weer</th>
               <th scope="col" colspan="2" >Temp</th>
-              <th scope="col">Richting</th>
-              <th scope="col" colspan="2">Snelheid</th>
+              <th scope="col" colspan="3">Wind</th>
               <th scope="col" colspan="2" >zicht</th>
-              <th scope="col">Druk / trend</th>
+              <th rowspan="2">Druk / trend</th>
             </tr>
             <tr>
+              <th></th>
+              <th></th>
+              <th scope="col">Richting</th>
+              <th scope="col" colspan="2">Snelheid</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td rowspan="2">Kust</td>
               <td><a href="http://www.kmi.be/meteo/view/nl/1586641-Webcam+Zeebrugge.html">ZeeBrugge</a></td>
               <td><img src="img/w3.gif"  title="bewolkt met opklaringen" alt="bewolkt met opklaringen"></td>
               <td>11.1</td>
@@ -116,6 +125,7 @@ window.onload = function (){
               <td>998 hPa, Stijgend</td>
             </tr>
             <tr>
+              <td>Vlaanderen</td>
               <td><a href="http://www.kmi.be/meteo/view/nl/1586624-Webcam+Ukkel.html">Ukkel</a></td>
               <td><img src="img/w10.gif"  title="lichte buien" alt="lichte buien"></td>
               <td>13.2</td>
@@ -128,6 +138,7 @@ window.onload = function (){
               <td>992 hPa, Stijgend</td>
             </tr>
             <tr>
+              <td>Hoog-Belgie</td>
               <td><a href="http://www.kmi.be/meteo/view/nl/1586652-Webcam+Wideumont.html">Widuemont</a></td>
               <td><img src="img/w7.gif" title="overtrokken" alt="overtrokken"></td>
               <td>12.8</td>
@@ -157,11 +168,6 @@ window.onload = function (){
               <th colspan="13">Gemiddelde klimaatgegevens 2011</th>
             </tr>
           </thead>
-          <tfoot>
-            <tr>
-              <th colspan="13">&copy; <a href="http://www.kmi.be">KMI </a></th>
-            </tr>
-          </tfoot>
           <tbody>
             <tr>
               <th colspan="13">Klimatogram voor Oostende</th>
@@ -212,6 +218,21 @@ window.onload = function (){
               <td>2</td>
             </tr>
             <tr>
+              <td>Neerslag in mm</td>
+              <td>52</td>
+              <td>44</td>
+              <td>28</td>
+              <td>31</td>
+              <td>32</td>
+              <td>32</td>
+              <td>61</td>
+              <td>56</td>
+              <td>58</td>
+              <td>74</td>
+              <td>60</td>
+              <td>51</td>
+            </tr> 
+            <tr>
               <td>Dagen met neerslag</td>
               <td>14</td>
               <td>13</td>
@@ -241,20 +262,7 @@ window.onload = function (){
               <td>65</td>
               <td>45</td>
             </tr>
-          </tbody>
-        </table>
-        <p>verwijder mij</p>
-        <table border="1">
-          <thead>
-            <tr>
-              <th colspan="13">Gemiddelde klimaatgegevens 2011</th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <th colspan="13">&copy; <a href="http://www.kmi.be">KMI </a></th>
-            </tr>
-          </tfoot>
+
           <tbody>
             <tr>
               <th colspan="13">Klimatogram voor St.-Hubert</th>
@@ -351,6 +359,11 @@ window.onload = function (){
               <td>43</td>
             </tr>
           </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="13">&copy; <a href="http://www.kmi.be">KMI </a></th>
+            </tr>
+          </tfoot>
         </table>
       </article>
     </section>
