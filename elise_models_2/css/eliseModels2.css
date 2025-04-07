@@ -5,6 +5,12 @@ body {
 	margin:0;
 	padding:0;
 }
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 div {
 	/*outline:2px dashed silver;*/
 	margin:0;
@@ -21,12 +27,20 @@ img {
 	border:none;
 }
 .links {
+	float: left;
 	background:#55C5E8;
 	padding:1em;
 }
 .rechts {
+	float: right;
 	background:#FD6943;
 	padding:1em 2em;
+}
+
+.midden::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 .sectie {
 	background:#F7F7F7;
@@ -36,12 +50,28 @@ img {
 .thumb {
 	float: left;
 	background:#A5CB4E;
-	width:150px;
-	height:130px;
+	width:130px;
+	height: auto;
+	min-height: 130px;
 	padding:0.625em;
 	margin:0.625em;
 	text-align: center;
-	overflow: hidden;
+	overflow: visible;
+}
+
+.thumb img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin:0 auto;
+}
+
+.thumb .caption {
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 1.2;
 }
 .header {
 	background:#D93E89;
