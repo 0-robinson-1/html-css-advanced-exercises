@@ -36,12 +36,16 @@
 
 <!--inhoud-->
 <main id="inhoud">
-  <img src="../img/web-developer.jpg">
-  <h1>Webontwikkelaar</h1>
-  <h2>Een vdab opleiding</h2>
-  <h3>T&amp;O Oostende</h3>
-  <p>Leer efficiënt en professionele websites ontwikkelen<br>
-    die voldoen aan alle webstandaarden</p>
+  <section class="intro">
+    <div class="intro-text">
+      <h1>Webontwikkelaar</h1>
+      <h2>Een vdab opleiding</h2>
+      <h3>T&amp;O Oostende</h3>
+      <p>Leer efficiënt en professionele websites ontwikkelen<br>
+        die voldoen aan alle webstandaarden</p>
+    </div>
+    <img src="../img/web-developer.jpg" alt="Webontwikkelaar afbeelding">
+  </section>
 
   <section class="vdab-info">
     <div class="vdab-inner">
@@ -57,33 +61,39 @@
         <li>Je bevindt je in een tof team van mede-cursisten die in alle staten van gevorderdheid verkeren!</li>
       </ul>
   </div>
+
 </section>
   <h2>T&amp;O Oostende Nieuws</h2>
-  <article id="nws_123" >
-    10 Mei 2012
-    <h3>Nu ook Front-end ontwikkelaar</h3>
-    <div>
-      <p>Vanaf vandaag kan je ook <a href="http://vdab.be/mijnvdab/opleidingen/opleidingen.jsp?context=MAIL&entryPoint=OpleidingInhoud&opleidingid=41424&doelgroep=2">Front-end ontwikkelaar</a> volgen in ons centrum. De Front-end developer spitst zich meer toe op op de client-side programmatie en UI van de website.</p>
-    </div>
-  </article>
-  <article id="nws_456">
-    24 Juni 2012
-    <h3>Responsive web design</h3>
-    <div>
-      <p>Met de komst van allerhande mobiele toestellen - smartphones, tablets - richten we ons in de module <code>html</code> en <code>css</code> ook op <a href="http://www.alistapart.com/articles/responsive-web-design/">Responsive web design</a>.</p>
-      <p>In plaats van verschillende websites te maken, voor desktops én voor mobiles, maken we er slechts één en zorgen ervoor dat deze zich vanzelf aanpast aan zijn context: toestel, schermgresolutie, orientatie.</p>
-      <p>Daar komt heel wat bij kijken: je moet niet alleen rekening houden met het scherm, maar ook met de laadtijd van beelden, stylesheets en scripts. Ook scripting moet opnieuw bekeken worden want de OS van het toestel laat niet alles toe wat je op een Windows of Mac kan gebruiken.</p>
-    </div>
-  </article>
-  <article id="nws_789" >
-    10 Mei 2012
-    <h3>IT- event te Wevelgem</h3>
-    <div>
-      <p>Op donderdag 13 december om 18u organiseert de IT-opleidingen West-Vlaanderen opnieuw een IT-event voor bedrijven. Het thema is deze keer "recrutering van IT professionals".</p>
-      <p>Interesse? contacteer dan <a href="mailto:mickey.mouse@disney.com">Isabelle Beheydt</a></p>
-    </div>
-  </article>
-  <img src="../img/HTML5_Logo_128.png">
+  <section class="nieuws-columns">
+    <article id="nws_123" >
+      <span class="datum">10 Mei 2012</span>
+      <h3>Nu ook Front-end ontwikkelaar</h3>
+      <div>
+        <p>Vanaf vandaag kan je ook <a href="http://vdab.be/mijnvdab/opleidingen/opleidingen.jsp?context=MAIL&entryPoint=OpleidingInhoud&opleidingid=41424&doelgroep=2">Front-end ontwikkelaar</a> volgen in ons centrum. De Front-end developer spitst zich meer toe op op de client-side programmatie en UI van de website.</p>
+      </div>
+    </article>
+
+    <article id="nws_456">
+      <span class="datum">24 Juni 2012</span>
+      <h3>Responsive web design</h3>
+      <div>
+        <p>Met de komst van allerhande mobiele toestellen - smartphones, tablets - richten we ons in de module <code>html</code> en <code>css</code> ook op <a href="http://www.alistapart.com/articles/responsive-web-design/">Responsive web design</a>.</p>
+        <p>In plaats van verschillende websites te maken, voor desktops én voor mobiles, maken we er slechts één en zorgen ervoor dat deze zich vanzelf aanpast aan zijn context: toestel, schermgresolutie, orientatie.</p>
+        <p>Daar komt heel wat bij kijken: je moet niet alleen rekening houden met het scherm, maar ook met de laadtijd van beelden, stylesheets en scripts. Ook scripting moet opnieuw bekeken worden want de OS van het toestel laat niet alles toe wat je op een Windows of Mac kan gebruiken.</p>
+      </div>
+    </article>
+
+    <article id="nws_789" >
+      <span class="datum">10 Mei 2012</span>
+      <h3>IT- event te Wevelgem</h3>
+      <div>
+        <p>Op donderdag 13 december om 18u organiseert de IT-opleidingen West-Vlaanderen opnieuw een IT-event voor bedrijven. Het thema is deze keer "recrutering van IT professionals".</p>
+        <p>Interesse? contacteer dan <a href="mailto:mickey.mouse@disney.com">Isabelle Beheydt</a></p>
+      </div>
+      <img src="../img/HTML5_Logo_128.png">
+    </article>
+
+</section>
 </main>
 <!--einde inhoud--> 
 
