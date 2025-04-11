@@ -1,0 +1,11 @@
+/* Set the page background color */
+body {
+    background-color: #cff9b6;
+  }
+  
+  /* Button styling to match the same green color */
+  .stuurdoor-btn {
+    background-color: #40fa56;
+    border-color: #2F6B36;
+    color: #fff;
+  }
