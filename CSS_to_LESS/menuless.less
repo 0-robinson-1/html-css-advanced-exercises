@@ -1,0 +1,96 @@
+@font-stack: Verdana, Geneva, sans-serif;
+@font-size: 1em;
+@menu-bg-start: #e570e7;
+@menu-bg-middle: #c85ec7;
+@menu-bg-end: #a849a3;
+@hover-bg-start: #fb83fa;
+@hover-bg-end: #e93cec;
+@submenu-bg: #D566D5;
+@shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.5);
+
+.gradient(@start, @end) {
+  background: @start;
+  background: -moz-linear-gradient(top, @start 0%, @end 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @start), color-stop(100%, @end));
+  background: -webkit-linear-gradient(top, @start 0%, @end 100%);
+  background: -o-linear-gradient(top, @start 0%, @end 100%);
+  background: -ms-linear-gradient(top, @start 0%, @end 100%);
+  background: linear-gradient(to bottom, @start 0%, @end 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@{start}', endColorstr='@{end}', GradientType=0);
+}
+
+.box-shadow(@value) {
+  box-shadow: @value;
+  -moz-box-shadow: @value;
+  -webkit-box-shadow: @value;
+}
+
+.hor_dropdown_menu {
+  font-family: @font-stack;
+  font-size: @font-size;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  .gradient(@menu-bg-start, @menu-bg-end);
+  .box-shadow(@shadow);
+
+  li {
+    float: left;
+    position: relative;
+    margin: 0;
+    list-style: none;
+
+    &:hover > a {
+      .gradient(@hover-bg-start, @hover-bg-end);
+    }
+
+    &:hover > ul {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.6em 1.25em;
+  }
+
+  .actief > a {
+    .gradient(@hover-bg-start, @hover-bg-end);
+  }
+
+  ul {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    width: 12em;
+    background: @submenu-bg;
+    .box-shadow(@shadow);
+    -moz-transition: opacity .25s linear, visibility .1s linear .1s;
+    -webkit-transition: opacity .25s linear, visibility .1s linear .1s;
+    -o-transition: opacity .25s linear, visibility .1s linear .1s;
+    transition: opacity .25s linear, visibility .1s linear .1s;
+
+    li {
+      float: none;
+      margin: 0;
+
+      &:hover > ul {
+        left: 11em;
+      }
+    }
+
+    ul {
+      top: 0.6em;
+      left: 13em;
+      -moz-transition: opacity .25s linear, visibility .1s linear .1s, left .25s linear;
+      -webkit-transition: opacity .25s linear, visibility .1s linear .1s, left .25s linear;
+      -o-transition: opacity .25s linear, visibility .1s linear .1s, left .25s linear;
+      transition: opacity .25s linear, visibility .1s linear .1s, left .25s linear;
+    }
+  }
+}
